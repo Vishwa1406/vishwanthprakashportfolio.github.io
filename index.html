@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website - Vishwanth P</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/506a13389d.js" crossorigin="anonymous"></script>
+        <script>
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        
+    </head>
+    <div class="header_1">
+        <!-- <h2>Scroll Indicator</h2> -->
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <br>
+      
+      <div>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!-- <img src="images/logo_1.png" class="logo"> -->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>Software Engineering Student <span>@</span> VIT Chennai</p>
+                    <h1>Hi, I'm <span> VISHWANTH PRAKASH <br></span> From India</h1>
+                </div><br>
+                <div class="social-icons_1">
+                    <a href="https://www.linkedin.com/in/vishwanth-prakash-a26b63227/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://m.facebook.com/people/Vishwanth-Prakash/100074346415986/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Vishwa1406" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://stackoverflow.com/users/20420177/vishwanth-prakash" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/VishwanthPraka1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                
+                </div>
+            
+            </div>
+        </div>
+        <!----------------about------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user_1.jpg">
+                    </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1><br>
+                            <p> I'm Vishwanth Prakash from Tamil Nadu. I'm a Second Year Software Engineering Student 
+                                in<br>Vellore Institute of Technology, Chennai. I'm Highly interested in App development, Web development and Cloud Computing.
+                                Also interested to Work-on in Auduino Coding and beginner in Machine Learning.
+                                </p>
+                                
+                                <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                            <li><span>App Development</span><br>Developing a mobile application using various tools like flutter etc </li>
+                            <li><span>Web Development</span><br>Developing a web application for various sectors using a HTML, CSS, Javascript, PHP etc.</li>
+                            <li><span>Cloud Computing</span><br>Basic level of knowledge with some minor projects</li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                            <li><span>Club Member</span><br>Google Developers Student Club - VIT Chennai</li>
+                            <li><span>Professional Service Member</span><br>Rotaract Club - VIT Chennai</li>
+                            <li><span>Operations Team Member</span><br>IOTHINC Club - VIT Chennai</li>
+                            <li><span>Club Volunteer</span><br>Hack Club - VIT Chennai</li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                            <li><span>MTech Integrated Software Engineering</span><br>Vellore Institute of Technology - Chennai <br> Year : 2021 - 2026<br> (Currently Pursuing) </li>
+                            <li><span>Higher Secondary (12th)</span><br>St.James Matriculation Higher Secondary School - Tiruchirapalli<br> Year : 2019 - 2021<br> Percentage : <a> 91% </a></li>
+                            <li><span>SSLC (10th)</span><br>Arockiamatha Matriculation Higher Secondary School - Tiruchirapalli<br> Year : 2017 - 2019<br> Percentage : <a> 92% </a></li>
+
+                                    </ul>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!--- -------------services-------------- ----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Developing a user friendly web applications using HTML, CSS, Javascript etc.
+                    with the help of Bootstrap and JQuery stuffs.
+                </p>
+                     <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>App Development</h2>
+                <p>Developing a simple and highly efficient android applications using Android Studio and Flutter.
+                    Also done some projects on .NET Framework with C# Language.
+                </p>
+                     <!-- <a href="#">Learn more</a> -->
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>IOT Integration</h2>
+                <p>Intemediate level of developing hardware components for various projects with IOT integration and Cloud support.</p>
+                     <!-- <a href="#">Learn more</a> -->
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!--------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+                <h3>Women Safety Application 2.O</h3>
+                <p>A Android application is developed for women and children Safety with user friendly interface.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/pic_2.jpg">
+            <div class="layer">
+                <h3>Tourist Guiding System</h3>
+                <p>The Windows application is developed for the public people who seek travel guide for chennai. This application 
+                    acts as a virtual guide to people. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+                <h3>Women Safety Application</h3>
+                <p>A Android application is developed for women and children Safety with user friendly interface</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/pic_4.jpg">
+            <div class="layer">
+                <h3>Thesis on Workforce Development and Hiring Process of an Industry</h3>
+                <p>Focusing on IT Industry inorder to collect their Hiring Process, Interview Basics, Workforce Development Programme and the criteria of promoting their regular staffs of Various organizations by contacting their senior employees and proceeding to the preparation of a Thesis Document.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/pic_5.jpg">
+            <div class="layer">
+                <h3>
+                    Virtual Labs</h3>
+                <p>Virtual labs is a team project of 8 done for Innovative prjects course. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/pic_6.jpg">
+            <div class="layer">
+                <h3>
+                    Foreign Direct Investment and Foreign Institutional Investors in India</h3>
+                <p>Thesis submitted on FDI and FII Investments in India</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#" class="btn">See more</a> -->
+</div>
+</div>
+<br><br>
+<!---------- contact ----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">            
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:vishwanthprakash14@gmail.com"><i class="fas fa-paper-plane"></i></a>vishwanthprakash@gmail.com</p>
+                <p><a href="tel:9787480003"><i class="fas fa-phone-volume"></i></a> +91 9787480003</p>
+                <p><a href="https://goo.gl/maps/VdVnotucFRExqdTP7" target="_blank"><i class="fas fa-location-dot"></i></a> Tiruchirappalli, Tamil Nadu</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vishwanth-prakash-a26b63227/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://m.facebook.com/people/Vishwanth-Prakash/100074346415986/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Vishwa1406" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://stackoverflow.com/users/20420177/vishwanth-prakash" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/VishwanthPraka1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                
+                </div>
+                <a href="https://docs.google.com/document/d/1k5u8MT9q8a4YohclhbiE38zAZkSHk56x/edit?usp=share_link&ouid=108217194294244674567&rtpof=true&sd=true" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>  
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">message sent successfully!!!</span>
+            </div>            
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Vishwanth Prakash. Made by <i class="fa-solid fa-code"></i> Vishwanth Prakash. All Rights Reserved</p>
+    </div>
+</div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Username : "vishwanthprakash14@gmail.com",
+                        Password : "3401D95CEFC02BAE1090E19D6D71544212CE",
+                        To : 'vishwanthprakash14@gmail.com',
+                        From : 'vishwanthprakash14@gmail.com',
+                        Subject : "New Contact Form Enquiry",
+                        ReplyFrom : document.getElementById("email").value,
+                        Body : "Name: " + document.getElementById("name").value 
+                                + "<br>" +
+                                "E-mail: " + document.getElementById("email").value
+                                + "<br>" +
+                                "Message: " + document.getElementById("message").value
+                    }).then(
+                    message => alert(message)
+                    );
+            }
+        </script>
+    </body>
+</div>
+</html>
